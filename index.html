@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English Learning Website</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f7fb;
+      color:#333;
+      line-height:1.6;
+    }
+
+    header{
+      background:#1e88e5;
+      color:white;
+      padding:20px;
+      text-align:center;
+    }
+
+    nav{
+      background:#1565c0;
+      padding:12px;
+      text-align:center;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 15px;
+      font-weight:bold;
+    }
+
+    nav a:hover{
+      color:yellow;
+    }
+
+    .biodata{
+      background:white;
+      padding:20px;
+      text-align:center;
+      border-bottom:3px solid #1e88e5;
+    }
+
+    .biodata h3{
+      color:#1565c0;
+      margin-bottom:10px;
+    }
+
+    .hero{
+      padding:60px;
+      text-align:center;
+      background:linear-gradient(to right,#42a5f5,#90caf9);
+      color:white;
+    }
+
+    .hero h1{
+      font-size:40px;
+      margin-bottom:15px;
+    }
+
+    .container{
+      width:90%;
+      margin:auto;
+      padding:40px 0;
+    }
+
+    .title{
+      text-align:center;
+      margin-bottom:30px;
+      color:#1565c0;
+    }
+
+    .card-container{
+      display:flex;
+      gap:20px;
+      flex-wrap:wrap;
+      justify-content:center;
+    }
+
+    .card{
+      background:white;
+      width:320px;
+      border-radius:10px;
+      overflow:hidden;
+      box-shadow:0 4px 8px rgba(0,0,0,0.2);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:scale(1.05);
+    }
+
+    .card img{
+      width:100%;
+      height:180px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:20px;
+    }
+
+    .card-content h3{
+      color:#1565c0;
+      margin-bottom:10px;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:10px;
+      padding:10px 15px;
+      background:#1e88e5;
+      color:white;
+      text-decoration:none;
+      border-radius:5px;
+      border:none;
+      cursor:pointer;
+    }
+
+    .btn:hover{
+      background:#0d47a1;
+    }
+
+    .materi-lengkap{
+      background:white;
+      margin-top:50px;
+      padding:30px;
+      border-radius:10px;
+      box-shadow:0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .materi-lengkap h2{
+      color:#1565c0;
+      margin-bottom:20px;
+    }
+
+    .materi-lengkap h3{
+      margin-top:20px;
+      color:#0d47a1;
+    }
+
+    .quiz{
+      background:white;
+      margin-top:50px;
+      padding:25px;
+      border-radius:10px;
+      box-shadow:0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    footer{
+      background:#1565c0;
+      color:white;
+      text-align:center;
+      padding:15px;
+      margin-top:40px;
+    }
+
+    @media(max-width:768px){
+
+      .hero h1{
+        font-size:30px;
+      }
+
+      .card-container{
+        flex-direction:column;
+        align-items:center;
+      }
+
+      .card{
+        width:90%;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>English Learning Website</h1>
+    <p>Learning English Made Easy and Fun</p>
+  </header>
+
+  <!-- BIODATA -->
+  <div class="biodata">
+    <h3>Student Biodata</h3>
+    <p><strong>Name :</strong> Brema Barniardi Barus</p>
+    <p><strong>Student ID :</strong> 2505181100</p>
+    <p><strong>Class :</strong> 2.E TRPL</p>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#materi">Materials</a>
+    <a href="#lengkap">Lessons</a>
+    <a href="#quiz">Quiz</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <h1>Welcome to English Class</h1>
+
+    <p>
+      Improve your Speaking,
+      Reading, Writing, and Listening skills.
+    </p>
+  </section>
+
+  <!-- MATERIAL -->
+  <div class="container" id="materi">
+
+    <h2 class="title">English Learning Materials</h2>
+
+    <div class="card-container">
+
+      <!-- CARD 1 -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="card-content">
+          <h3>Grammar</h3>
+
+          <p>
+            Grammar is the system of English
+            language rules used to form sentences.
+          </p>
+
+          <br>
+
+          <p>
+            <strong>Example:</strong>
+            She goes to school every day.
+          </p>
+
+          <a href="#lengkap" class="btn">Learn More</a>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="card-content">
+          <h3>Speaking</h3>
+
+          <p>
+            Speaking is the ability to communicate
+            using English language.
+          </p>
+
+          <br>
+
+          <p>
+            <strong>Example:</strong>
+            How are you today?
+          </p>
+
+          <a href="#lengkap" class="btn">Learn More</a>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="card-content">
+          <h3>Vocabulary</h3>
+
+          <p>
+            Vocabulary helps students improve
+            their English word knowledge.
+          </p>
+
+          <br>
+
+          <p>
+            <strong>Example:</strong>
+            Beautiful = Pretty
+          </p>
+
+          <a href="#lengkap" class="btn">Learn More</a>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="card-content">
+          <h3>Reading</h3>
+
+          <p>
+            Reading helps students understand
+            English texts and passages.
+          </p>
+
+          <br>
+
+          <p>
+            <strong>Example:</strong>
+            The cat is sleeping on the chair.
+          </p>
+
+          <a href="#lengkap" class="btn">Learn More</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- COMPLETE MATERIAL -->
+    <div class="materi-lengkap" id="lengkap">
+
+      <h2>Complete English Learning Materials</h2>
+
+      <h3>1. Grammar</h3>
+
+      <p>
+        Grammar is a set of rules used to arrange
+        words into correct sentences.
+      </p>
+
+      <br>
+
+      <p><strong>Simple Present Tense:</strong></p>
+
+      <p>
+        It is used to express habits,
+        facts, and daily activities.
+      </p>
+
+      <br>
+
+      <p><strong>Formula:</strong></p>
+
+      <p>
+        Subject + Verb 1 + Object
+      </p>
+
+      <br>
+
+      <p><strong>Examples:</strong></p>
+
+      <ul>
+        <li>I study English every day.</li>
+        <li>She drinks milk every morning.</li>
+        <li>They play football on Sunday.</li>
+      </ul>
+
+      <h3>2. Speaking</h3>
+
+      <p>
+        Speaking is the ability to communicate
+        fluently in English.
+      </p>
+
+      <br>
+
+      <p><strong>Conversation Example:</strong></p>
+
+      <p>
+        A : Hello, how are you?<br>
+        B : I am fine, thank you.
+      </p>
+
+      <br>
+
+      <p><strong>Speaking Tips:</strong></p>
+
+      <ul>
+        <li>Practice speaking every day</li>
+        <li>Listen to English songs</li>
+        <li>Watch English movies</li>
+        <li>Speak confidently without fear</li>
+      </ul>
+
+      <h3>3. Vocabulary</h3>
+
+      <p>
+        Vocabulary is a collection of English words.
+      </p>
+
+      <br>
+
+      <p><strong>Vocabulary Examples:</strong></p>
+
+      <ul>
+        <li>Beautiful = Pretty</li>
+        <li>School = Place to study</li>
+        <li>Teacher = Educator</li>
+        <li>Book = Reading material</li>
+        <li>Friend = Companion</li>
+      </ul>
+
+      <h3>4. Reading</h3>
+
+      <p>
+        Reading is the ability to read
+        and understand English texts.
+      </p>
+
+      <br>
+
+      <p><strong>Text Example:</strong></p>
+
+      <p>
+        My name is Andi. I am a student.
+        I go to school every day.
+        I like learning English because it is fun.
+      </p>
+
+      <br>
+
+      <p><strong>Meaning:</strong></p>
+
+      <p>
+        The text explains about a student
+        who enjoys learning English every day.
+      </p>
+
+      <h3>5. Writing</h3>
+
+      <p>
+        Writing is the ability to express ideas
+        in written English.
+      </p>
+
+      <br>
+
+      <p><strong>Example:</strong></p>
+
+      <p>
+        "I love my family because they always support me."
+      </p>
+
+      <h3>6. Listening</h3>
+
+      <p>
+        Listening is the ability to understand
+        spoken English conversations.
+      </p>
+
+      <br>
+
+      <p><strong>Listening Tips:</strong></p>
+
+      <ul>
+        <li>Listen to English songs</li>
+        <li>Watch movies without subtitles</li>
+        <li>Practice listening to English podcasts</li>
+      </ul>
+
+    </div>
+
+    <!-- QUIZ -->
+    <div class="quiz" id="quiz">
+
+      <h2>Mini Quiz</h2>
+
+      <br>
+
+      <p>
+        <strong>Question 1:</strong>
+        What is the meaning of "Beautiful"?
+      </p>
+
+      <br>
+
+      <input type="radio" name="quiz1"> Ugly
+      <br><br>
+
+      <input type="radio" name="quiz1"> Pretty
+      <br><br>
+
+      <input type="radio" name="quiz1"> Sad
+      <br><br>
+
+      <button class="btn"
+      onclick="alert('The correct answer is: Pretty')">
+      Check Answer
+      </button>
+
+      <br><br><hr><br>
+
+      <p>
+        <strong>Question 2:</strong>
+        What is the meaning of "Teacher"?
+      </p>
+
+      <br>
+
+      <input type="radio" name="quiz2"> Doctor
+      <br><br>
+
+      <input type="radio" name="quiz2"> Educator
+      <br><br>
+
+      <input type="radio" name="quiz2"> Police
+      <br><br>
+
+      <button class="btn"
+      onclick="alert('The correct answer is: Educator')">
+      Check Answer
+      </button>
+
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+
+    <p>
+      © 2025 English Learning Website
+    </p>
+
+    <p>
+      Created by Brema Barniardi Barus
+    </p>
+
+  </footer>
+
+</body>
+</html>
